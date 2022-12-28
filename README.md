@@ -33,8 +33,13 @@ pip3 install pyside6
 
 5. Написать мне о критических ошибках или предложениях  
 
+
 <p align="center">
-  <img src="GUI/example2.png" width="500"/>
+  <img src="GUI/example22.png" width="500"/>
+</p>
+
+<p align="center">
+  <img src="GUI/example21.png" width="500"/>
 </p>
 
 ## Примечание
