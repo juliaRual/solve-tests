@@ -1,14 +1,18 @@
 import sys
 from PySide6 import QtCore, QtWidgets
 from gui import Ui_Form
+from initial import Ui_Form as Ui_Form_init
 from spmi import tests
 import random
 import textwrap
 
 app = QtWidgets.QApplication(sys.argv)
+Form2 = QtWidgets.QWidget()
 Form = QtWidgets.QWidget()
 ui = Ui_Form()
-ui.setupUi(Form)
+ui2 = Ui_Form_init()
+ui2.setupUi(Form)
+#ui.setupUi(Form)
 Form.show()
 
 # app logic
@@ -28,8 +32,7 @@ q = []
 def go_warp(text, symbols):
     return textwrap.fill(text, symbols)
 
-def change_question():
-    database = tests('test.txt')
+def change_question(database):
     question, true_answer_position, true_answer_text = get_random_question(database)
 
     ui.textEdit_question.setText(go_warp(question[0], 500))
@@ -81,14 +84,32 @@ def checkanswer(q, click_position):
     ui.pushButton_a4.setDisabled(True)
 
 
+# Here starts:
+def go_run(filepath):
+    database = tests(filepath)
+    Form.close()
+    ui.setupUi(Form2)
+    Form2.show()
+    change_question(database)
+    ui.pushButton_5.clicked.connect(lambda: change_question(database))
 
-change_question()
-ui.pushButton_5.clicked.connect(change_question)
+    ui.pushButton_a1.clicked.connect(lambda: checkanswer(q[-1], 1))
+    ui.pushButton_a2.clicked.connect(lambda: checkanswer(q[-1], 2))
+    ui.pushButton_a3.clicked.connect(lambda: checkanswer(q[-1], 3))
+    ui.pushButton_a4.clicked.connect(lambda: checkanswer(q[-1], 4))
 
-ui.pushButton_a1.clicked.connect(lambda: checkanswer(q[-1], 1))
-ui.pushButton_a2.clicked.connect(lambda: checkanswer(q[-1], 2))
-ui.pushButton_a3.clicked.connect(lambda: checkanswer(q[-1], 3))
-ui.pushButton_a4.clicked.connect(lambda: checkanswer(q[-1], 4))
+
+def fileinfo():
+    qfiledialog = QtWidgets.QFileDialog()
+    filepath = qfiledialog.getOpenFileName(ui2.pushButton, 'Open file', '/ home', "Data files (*.txt)")[0]
+    if filepath == '':
+        pass
+    else:
+        go_run(filepath)
+
+ui2.pushButton.clicked.connect(fileinfo)
+
+
 
 # run app
 
