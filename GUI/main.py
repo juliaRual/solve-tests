@@ -32,28 +32,28 @@ def change_question():
     database = tests('test.txt')
     question, true_answer_position, true_answer_text = get_random_question(database)
 
-    ui.textEdit_question.setText(go_warp(question[0], 50))
+    ui.textEdit_question.setText(go_warp(question[0], 500))
     
 
-    ui.toolButton_a1.setText(go_warp(question[1], 50))
-    ui.toolButton_a2.setText(go_warp(question[2], 50))
-    ui.toolButton_a3.setText(go_warp(question[3], 50))
-    ui.toolButton_a4.setText(go_warp(question[4], 50))
+    ui.pushButton_a1.setText(go_warp(question[1], 40))
+    ui.pushButton_a2.setText(go_warp(question[2], 40))
+    ui.pushButton_a3.setText(go_warp(question[3], 40))
+    ui.pushButton_a4.setText(go_warp(question[4], 40))
 
     q.append([question, true_answer_position, true_answer_text])
     ui.pushButton_5.setText('Пропуск')
 
-    ui.toolButton_a1.setStyleSheet('')
-    ui.toolButton_a2.setStyleSheet('')
-    ui.toolButton_a3.setStyleSheet('')
-    ui.toolButton_a4.setStyleSheet('')
+    ui.pushButton_a1.setStyleSheet('color: rgb(255, 255, 255);\nbackground-color: rgb(241, 154, 117);\nborder-radius: 25;\npadding: 0px 15px 0px 15px;')
+    ui.pushButton_a2.setStyleSheet('color: rgb(255, 255, 255);\nbackground-color: rgb(241, 154, 117);\nborder-radius: 25;\npadding: 0px 15px 0px 15px;')
+    ui.pushButton_a3.setStyleSheet('color: rgb(255, 255, 255);\nbackground-color: rgb(241, 154, 117);\nborder-radius: 25;\npadding: 0px 15px 0px 15px;')
+    ui.pushButton_a4.setStyleSheet('color: rgb(255, 255, 255);\nbackground-color: rgb(241, 154, 117);\nborder-radius: 25;\npadding: 0px 15px 0px 15px;')
     
-    ui.toolButton_a1.setDisabled(False)
-    ui.toolButton_a2.setDisabled(False)
-    ui.toolButton_a3.setDisabled(False)
-    ui.toolButton_a4.setDisabled(False)
+    ui.pushButton_a1.setDisabled(False)
+    ui.pushButton_a2.setDisabled(False)
+    ui.pushButton_a3.setDisabled(False)
+    ui.pushButton_a4.setDisabled(False)
 
-    #ui.toolButton_a3.
+    #ui.pushButton_a3.
 
 
 def checkanswer(q, click_position):
@@ -65,30 +65,30 @@ def checkanswer(q, click_position):
         print('correct!')
         ui.label_2.setText(str(int(ui.label_2.text()) + 1))
 
-        ui.__getattribute__(f'toolButton_a{true_answer_position}').setStyleSheet('background-color: rgb(182, 234, 114);')
+        ui.__getattribute__(f'pushButton_a{true_answer_position}').setStyleSheet('color: rgb(255, 250, 252); background-color: rgb(182, 234, 114); border-radius: 25;')
 
     else:
         print('incorrect :0')
-        ui.label_4.setText(str(int(ui.label_4.text()) + 1))
-
-        ui.__getattribute__(f'toolButton_a{true_answer_position}').setStyleSheet('background-color: rgb(182, 234, 114);')
-        ui.__getattribute__(f'toolButton_a{click_position}').setStyleSheet('background-color: rgb(255, 110, 87);')
         
 
-    ui.toolButton_a1.setDisabled(True)
-    ui.toolButton_a2.setDisabled(True)
-    ui.toolButton_a3.setDisabled(True)
-    ui.toolButton_a4.setDisabled(True)
+        ui.__getattribute__(f'pushButton_a{true_answer_position}').setStyleSheet('color: rgb(255, 250, 252); background-color: rgb(182, 234, 114); border-radius: 25;')
+        ui.__getattribute__(f'pushButton_a{click_position}').setStyleSheet('background-color: rgb(255, 110, 87);color: rgb(255, 250, 252); border-radius: 25;')
+        
+    ui.label_4.setText(str(int(ui.label_4.text()) + 1))
+    ui.pushButton_a1.setDisabled(True)
+    ui.pushButton_a2.setDisabled(True)
+    ui.pushButton_a3.setDisabled(True)
+    ui.pushButton_a4.setDisabled(True)
 
 
 
 change_question()
 ui.pushButton_5.clicked.connect(change_question)
 
-ui.toolButton_a1.clicked.connect(lambda: checkanswer(q[-1], 1))
-ui.toolButton_a2.clicked.connect(lambda: checkanswer(q[-1], 2))
-ui.toolButton_a3.clicked.connect(lambda: checkanswer(q[-1], 3))
-ui.toolButton_a4.clicked.connect(lambda: checkanswer(q[-1], 4))
+ui.pushButton_a1.clicked.connect(lambda: checkanswer(q[-1], 1))
+ui.pushButton_a2.clicked.connect(lambda: checkanswer(q[-1], 2))
+ui.pushButton_a3.clicked.connect(lambda: checkanswer(q[-1], 3))
+ui.pushButton_a4.clicked.connect(lambda: checkanswer(q[-1], 4))
 
 # run app
 

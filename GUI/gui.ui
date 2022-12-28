@@ -6,20 +6,20 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>591</width>
-    <height>639</height>
+    <width>574</width>
+    <height>660</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>SPMI bases</string>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: rgb(126, 89, 199);</string>
   </property>
-  <widget class="QToolButton" name="toolButton_a1">
+  <widget class="QPushButton" name="pushButton_a1">
    <property name="geometry">
     <rect>
-     <x>110</x>
+     <x>100</x>
      <y>210</y>
      <width>381</width>
      <height>71</height>
@@ -28,7 +28,7 @@
    <property name="font">
     <font>
      <family>Tahoma</family>
-     <pointsize>14</pointsize>
+     <pointsize>16</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -40,10 +40,10 @@ border-radius: 25;</string>
     <string/>
    </property>
   </widget>
-  <widget class="QToolButton" name="toolButton_a2">
+  <widget class="QPushButton" name="pushButton_a2">
    <property name="geometry">
     <rect>
-     <x>110</x>
+     <x>100</x>
      <y>290</y>
      <width>381</width>
      <height>71</height>
@@ -52,22 +52,23 @@ border-radius: 25;</string>
    <property name="font">
     <font>
      <family>Tahoma</family>
-     <pointsize>14</pointsize>
+     <pointsize>16</pointsize>
     </font>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);
 background-color: rgb(241, 154, 117);
-border-radius: 25;</string>
+border-radius: 25;
+padding: 0px 15px 0px 15px;</string>
    </property>
    <property name="text">
     <string/>
    </property>
   </widget>
-  <widget class="QToolButton" name="toolButton_a3">
+  <widget class="QPushButton" name="pushButton_a3">
    <property name="geometry">
     <rect>
-     <x>110</x>
+     <x>100</x>
      <y>370</y>
      <width>381</width>
      <height>71</height>
@@ -76,7 +77,7 @@ border-radius: 25;</string>
    <property name="font">
     <font>
      <family>Tahoma</family>
-     <pointsize>14</pointsize>
+     <pointsize>16</pointsize>
     </font>
    </property>
    <property name="layoutDirection">
@@ -97,10 +98,10 @@ border-radius: 25;</string>
     <bool>false</bool>
    </property>
   </widget>
-  <widget class="QToolButton" name="toolButton_a4">
+  <widget class="QPushButton" name="pushButton_a4">
    <property name="geometry">
     <rect>
-     <x>110</x>
+     <x>100</x>
      <y>450</y>
      <width>381</width>
      <height>71</height>
@@ -109,7 +110,7 @@ border-radius: 25;</string>
    <property name="font">
     <font>
      <family>Tahoma</family>
-     <pointsize>14</pointsize>
+     <pointsize>16</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -124,9 +125,9 @@ border-radius: 25;</string>
   <widget class="QPushButton" name="pushButton_5">
    <property name="geometry">
     <rect>
-     <x>360</x>
-     <y>550</y>
-     <width>121</width>
+     <x>350</x>
+     <y>540</y>
+     <width>131</width>
      <height>51</height>
     </rect>
    </property>
@@ -148,7 +149,7 @@ border-radius: 25;</string>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>110</x>
+     <x>100</x>
      <y>570</y>
      <width>141</width>
      <height>31</height>
@@ -170,14 +171,14 @@ border-radius: 25;</string>
   <widget class="QFrame" name="frame">
    <property name="geometry">
     <rect>
-     <x>0</x>
+     <x>-10</x>
      <y>0</y>
      <width>591</width>
      <height>181</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 163, 123)</string>
+    <string notr="true">background-color: rgb(234, 151, 116);</string>
    </property>
    <property name="frameShape">
     <enum>QFrame::StyledPanel</enum>
@@ -188,16 +189,16 @@ border-radius: 25;</string>
    <widget class="QTextEdit" name="textEdit_question">
     <property name="geometry">
      <rect>
-      <x>110</x>
-      <y>50</y>
-      <width>381</width>
-      <height>101</height>
+      <x>100</x>
+      <y>40</y>
+      <width>421</width>
+      <height>111</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Tahoma</family>
-      <pointsize>16</pointsize>
+      <pointsize>18</pointsize>
      </font>
     </property>
     <property name="styleSheet">
@@ -208,6 +209,9 @@ text-align: center;</string>
     <property name="undoRedoEnabled">
      <bool>false</bool>
     </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
     <property name="html">
      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
@@ -215,15 +219,18 @@ p, li { white-space: pre-wrap; }
 hr { height: 1px; border-width: 0; }
 li.unchecked::marker { content: &quot;\2610&quot;; }
 li.checked::marker { content: &quot;\2612&quot;; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Tahoma'; font-size:16pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Tahoma'; font-size:18pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'.AppleSystemUIFont'; font-size:13pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="textInteractionFlags">
+     <set>Qt::NoTextInteraction</set>
     </property>
    </widget>
   </widget>
   <widget class="QLabel" name="label_5">
    <property name="geometry">
     <rect>
-     <x>110</x>
+     <x>100</x>
      <y>540</y>
      <width>141</width>
      <height>31</height>
@@ -245,9 +252,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>240</x>
+     <x>220</x>
      <y>530</y>
-     <width>41</width>
+     <width>51</width>
      <height>51</height>
     </rect>
    </property>
@@ -267,9 +274,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>190</x>
+     <x>170</x>
      <y>570</y>
-     <width>21</width>
+     <width>41</width>
      <height>31</height>
     </rect>
    </property>
@@ -284,6 +291,28 @@ li.checked::marker { content: &quot;\2612&quot;; }
    </property>
    <property name="text">
     <string>0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>620</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Tahoma</family>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>github.com/juliaRual</string>
    </property>
   </widget>
  </widget>
