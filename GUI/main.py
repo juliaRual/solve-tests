@@ -47,10 +47,10 @@ def change_question(database):
     q.append([question, true_answer_position, true_answer_text])
     ui.pushButton_5.setText('Пропуск')
 
-    ui.pushButton_a1.setStyleSheet('color: rgb(255, 255, 255);\nbackground-color: rgb(241, 154, 117);\nborder-radius: 25;\npadding: 0px 15px 0px 15px;')
-    ui.pushButton_a2.setStyleSheet('color: rgb(255, 255, 255);\nbackground-color: rgb(241, 154, 117);\nborder-radius: 25;\npadding: 0px 15px 0px 15px;')
-    ui.pushButton_a3.setStyleSheet('color: rgb(255, 255, 255);\nbackground-color: rgb(241, 154, 117);\nborder-radius: 25;\npadding: 0px 15px 0px 15px;')
-    ui.pushButton_a4.setStyleSheet('color: rgb(255, 255, 255);\nbackground-color: rgb(241, 154, 117);\nborder-radius: 25;\npadding: 0px 15px 0px 15px;')
+    ui.pushButton_a1.setStyleSheet('color: rgb(255, 255, 255); background-color: rgb(118, 140, 158); border-radius: 25; padding: 0px 15px 0px 15px;')
+    ui.pushButton_a2.setStyleSheet('color: rgb(255, 255, 255); background-color: rgb(118, 140, 158); border-radius: 25; padding: 0px 15px 0px 15px;')
+    ui.pushButton_a3.setStyleSheet('color: rgb(255, 255, 255); background-color: rgb(118, 140, 158); border-radius: 25; padding: 0px 15px 0px 15px;')
+    ui.pushButton_a4.setStyleSheet('color: rgb(255, 255, 255); background-color: rgb(118, 140, 158); border-radius: 25; padding: 0px 15px 0px 15px;')
     
     ui.pushButton_a1.setDisabled(False)
     ui.pushButton_a2.setDisabled(False)
@@ -69,14 +69,14 @@ def checkanswer(q, click_position):
         print('correct!')
         ui.label_2.setText(str(int(ui.label_2.text()) + 1))
 
-        ui.__getattribute__(f'pushButton_a{true_answer_position}').setStyleSheet('color: rgb(255, 250, 252); background-color: rgb(182, 234, 114); border-radius: 25;')
+        ui.__getattribute__(f'pushButton_a{true_answer_position}').setStyleSheet('color: rgb(255, 255, 255); background-color: rgb(94, 181, 247); border-radius: 25; padding: 0px 15px 0px 15px;')
 
     else:
         print('incorrect :0')
         
 
-        ui.__getattribute__(f'pushButton_a{true_answer_position}').setStyleSheet('color: rgb(255, 250, 252); background-color: rgb(182, 234, 114); border-radius: 25;')
-        ui.__getattribute__(f'pushButton_a{click_position}').setStyleSheet('background-color: rgb(255, 110, 87);color: rgb(255, 250, 252); border-radius: 25;')
+        ui.__getattribute__(f'pushButton_a{true_answer_position}').setStyleSheet('color: rgb(255, 255, 255); background-color: rgb(94, 181, 247); border-radius: 25; padding: 0px 15px 0px 15px;')
+        ui.__getattribute__(f'pushButton_a{click_position}').setStyleSheet('color: rgb(255, 255, 255); background-color: rgb(37, 71, 97); border-radius: 25; padding: 0px 15px 0px 15px;')
         
     ui.label_4.setText(str(int(ui.label_4.text()) + 1))
     ui.pushButton_a1.setDisabled(True)

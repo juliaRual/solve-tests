@@ -14,7 +14,7 @@
    <string>SPMI exams </string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(126, 89, 199);</string>
+   <string notr="true">background-color: rgb(23, 33, 43);</string>
   </property>
   <widget class="QPushButton" name="pushButton_a1">
    <property name="geometry">
@@ -33,7 +33,7 @@
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);
-background-color: rgb(241, 154, 117);
+background-color: rgb(118, 140, 158);
 border-radius: 25;</string>
    </property>
    <property name="text">
@@ -57,9 +57,8 @@ border-radius: 25;</string>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);
-background-color: rgb(241, 154, 117);
-border-radius: 25;
-padding: 0px 15px 0px 15px;</string>
+background-color: rgb(118, 140, 158);
+border-radius: 25;</string>
    </property>
    <property name="text">
     <string/>
@@ -85,7 +84,7 @@ padding: 0px 15px 0px 15px;</string>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);
-background-color: rgb(241, 154, 117);
+background-color: rgb(118, 140, 158);
 border-radius: 25;</string>
    </property>
    <property name="text">
@@ -115,7 +114,7 @@ border-radius: 25;</string>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);
-background-color: rgb(241, 154, 117);
+background-color: rgb(118, 140, 158);
 border-radius: 25;</string>
    </property>
    <property name="text">
@@ -139,7 +138,7 @@ border-radius: 25;</string>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 250, 252);
-background-color: rgb(241, 172, 134);
+background-color: rgb(94, 181, 247);
 border-radius: 25;</string>
    </property>
    <property name="text">
@@ -178,7 +177,7 @@ border-radius: 25;</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(234, 151, 116);</string>
+    <string notr="true">background-color: rgb(31, 41, 54);</string>
    </property>
    <property name="frameShape">
     <enum>QFrame::StyledPanel</enum>
@@ -297,7 +296,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>650</y>
+     <y>640</y>
      <width>511</width>
      <height>20</height>
     </rect>

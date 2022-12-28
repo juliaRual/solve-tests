@@ -23,12 +23,12 @@ class Ui_Form(object):
         if not Form.objectName():
             Form.setObjectName(u"Form")
         Form.resize(415, 293)
-        Form.setStyleSheet(u"background-color: rgb(126, 89, 199);")
+        Form.setStyleSheet(u"background-color: rgb(23, 33, 43);")
         self.frame = QFrame(Form)
         self.frame.setObjectName(u"frame")
         self.frame.setGeometry(QRect(30, 40, 351, 211))
         self.frame.setStyleSheet(u"color: rgb(255, 255, 255);\n"
-"background-color: rgb(241, 154, 117);\n"
+"background-color: rgb(37, 48, 62);\n"
 "border-radius: 25;")
         self.frame.setFrameShape(QFrame.StyledPanel)
         self.frame.setFrameShadow(QFrame.Raised)
@@ -37,7 +37,7 @@ class Ui_Form(object):
         self.label_5.setGeometry(QRect(0, 40, 351, 31))
         font = QFont()
         font.setFamilies([u"Tahoma"])
-        font.setPointSize(16)
+        font.setPointSize(18)
         self.label_5.setFont(font)
         self.label_5.setStyleSheet(u"color: rgb(255, 255, 255);")
         self.label_5.setAlignment(Qt.AlignCenter)
@@ -46,11 +46,11 @@ class Ui_Form(object):
         self.pushButton.setGeometry(QRect(110, 110, 131, 61))
         font1 = QFont()
         font1.setFamilies([u"Tahoma"])
-        font1.setPointSize(14)
+        font1.setPointSize(18)
         font1.setBold(False)
         self.pushButton.setFont(font1)
         self.pushButton.setStyleSheet(u"color: rgb(255, 250, 252);\n"
-"background-color: rgb(160, 113, 255);\n"
+"background-color: rgb(94, 181, 247);\n"
 "border-radius: 25;")
 
         self.retranslateUi(Form)

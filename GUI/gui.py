@@ -23,7 +23,7 @@ class Ui_Form(object):
         if not Form.objectName():
             Form.setObjectName(u"Form")
         Form.resize(527, 678)
-        Form.setStyleSheet(u"background-color: rgb(126, 89, 199);")
+        Form.setStyleSheet(u"background-color: rgb(23, 33, 43);")
         self.pushButton_a1 = QPushButton(Form)
         self.pushButton_a1.setObjectName(u"pushButton_a1")
         self.pushButton_a1.setGeometry(QRect(70, 210, 381, 71))
@@ -32,23 +32,22 @@ class Ui_Form(object):
         font.setPointSize(15)
         self.pushButton_a1.setFont(font)
         self.pushButton_a1.setStyleSheet(u"color: rgb(255, 255, 255);\n"
-"background-color: rgb(241, 154, 117);\n"
+"background-color: rgb(118, 140, 158);\n"
 "border-radius: 25;")
         self.pushButton_a2 = QPushButton(Form)
         self.pushButton_a2.setObjectName(u"pushButton_a2")
         self.pushButton_a2.setGeometry(QRect(70, 290, 381, 71))
         self.pushButton_a2.setFont(font)
         self.pushButton_a2.setStyleSheet(u"color: rgb(255, 255, 255);\n"
-"background-color: rgb(241, 154, 117);\n"
-"border-radius: 25;\n"
-"padding: 0px 15px 0px 15px;")
+"background-color: rgb(118, 140, 158);\n"
+"border-radius: 25;")
         self.pushButton_a3 = QPushButton(Form)
         self.pushButton_a3.setObjectName(u"pushButton_a3")
         self.pushButton_a3.setGeometry(QRect(70, 370, 381, 71))
         self.pushButton_a3.setFont(font)
         self.pushButton_a3.setLayoutDirection(Qt.LeftToRight)
         self.pushButton_a3.setStyleSheet(u"color: rgb(255, 255, 255);\n"
-"background-color: rgb(241, 154, 117);\n"
+"background-color: rgb(118, 140, 158);\n"
 "border-radius: 25;")
         self.pushButton_a3.setAutoRepeat(False)
         self.pushButton_a3.setAutoExclusive(False)
@@ -57,7 +56,7 @@ class Ui_Form(object):
         self.pushButton_a4.setGeometry(QRect(70, 450, 381, 71))
         self.pushButton_a4.setFont(font)
         self.pushButton_a4.setStyleSheet(u"color: rgb(255, 255, 255);\n"
-"background-color: rgb(241, 154, 117);\n"
+"background-color: rgb(118, 140, 158);\n"
 "border-radius: 25;")
         self.pushButton_5 = QPushButton(Form)
         self.pushButton_5.setObjectName(u"pushButton_5")
@@ -67,7 +66,7 @@ class Ui_Form(object):
         font1.setPointSize(18)
         self.pushButton_5.setFont(font1)
         self.pushButton_5.setStyleSheet(u"color: rgb(255, 250, 252);\n"
-"background-color: rgb(241, 172, 134);\n"
+"background-color: rgb(94, 181, 247);\n"
 "border-radius: 25;")
         self.label = QLabel(Form)
         self.label.setObjectName(u"label")
@@ -80,7 +79,7 @@ class Ui_Form(object):
         self.frame = QFrame(Form)
         self.frame.setObjectName(u"frame")
         self.frame.setGeometry(QRect(-10, 0, 591, 181))
-        self.frame.setStyleSheet(u"background-color: rgb(234, 151, 116);")
+        self.frame.setStyleSheet(u"background-color: rgb(31, 41, 54);")
         self.frame.setFrameShape(QFrame.StyledPanel)
         self.frame.setFrameShadow(QFrame.Raised)
         self.textEdit_question = QTextEdit(self.frame)
@@ -113,7 +112,7 @@ class Ui_Form(object):
         self.label_4.setStyleSheet(u"color:rgb(255, 242, 251);")
         self.label_3 = QLabel(Form)
         self.label_3.setObjectName(u"label_3")
-        self.label_3.setGeometry(QRect(10, 650, 511, 20))
+        self.label_3.setGeometry(QRect(10, 640, 511, 20))
         font4 = QFont()
         font4.setFamilies([u"Tahoma"])
         font4.setPointSize(13)

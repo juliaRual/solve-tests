@@ -14,7 +14,7 @@
    <string>Select test</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(126, 89, 199);</string>
+   <string notr="true">background-color: rgb(23, 33, 43);</string>
   </property>
   <widget class="QFrame" name="frame">
    <property name="geometry">
@@ -27,7 +27,7 @@
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);
-background-color: rgb(241, 154, 117);
+background-color: rgb(37, 48, 62);
 border-radius: 25;</string>
    </property>
    <property name="frameShape">
@@ -48,7 +48,7 @@ border-radius: 25;</string>
     <property name="font">
      <font>
       <family>Tahoma</family>
-      <pointsize>16</pointsize>
+      <pointsize>18</pointsize>
      </font>
     </property>
     <property name="styleSheet">
@@ -73,13 +73,13 @@ border-radius: 25;</string>
     <property name="font">
      <font>
       <family>Tahoma</family>
-      <pointsize>14</pointsize>
+      <pointsize>18</pointsize>
       <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
      <string notr="true">color: rgb(255, 250, 252);
-background-color: rgb(160, 113, 255);
+background-color: rgb(94, 181, 247);
 border-radius: 25;</string>
     </property>
     <property name="text">
