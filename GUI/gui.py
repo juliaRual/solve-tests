@@ -29,7 +29,7 @@ class Ui_Form(object):
         self.pushButton_a1.setGeometry(QRect(70, 210, 381, 71))
         font = QFont()
         font.setFamilies([u"Tahoma"])
-        font.setPointSize(16)
+        font.setPointSize(13)
         self.pushButton_a1.setFont(font)
         self.pushButton_a1.setStyleSheet(u"color: rgb(255, 255, 255);\n"
 "background-color: rgb(241, 154, 117);\n"
@@ -64,7 +64,7 @@ class Ui_Form(object):
         self.pushButton_5.setGeometry(QRect(320, 540, 131, 51))
         font1 = QFont()
         font1.setFamilies([u"Tahoma"])
-        font1.setPointSize(18)
+        font1.setPointSize(14)
         self.pushButton_5.setFont(font1)
         self.pushButton_5.setStyleSheet(u"color: rgb(255, 250, 252);\n"
 "background-color: rgb(241, 172, 134);\n"
@@ -74,7 +74,7 @@ class Ui_Form(object):
         self.label.setGeometry(QRect(70, 570, 141, 31))
         font2 = QFont()
         font2.setFamilies([u"Tahoma"])
-        font2.setPointSize(20)
+        font2.setPointSize(16)
         self.label.setFont(font2)
         self.label.setStyleSheet(u"color: rgb(255, 255, 255);")
         self.frame = QFrame(Form)
@@ -86,7 +86,7 @@ class Ui_Form(object):
         self.textEdit_question = QTextEdit(self.frame)
         self.textEdit_question.setObjectName(u"textEdit_question")
         self.textEdit_question.setGeometry(QRect(70, 40, 421, 111))
-        self.textEdit_question.setFont(font1)
+        self.textEdit_question.setFont(font2)
         self.textEdit_question.setStyleSheet(u"color: rgb(255, 255, 255);\n"
 "border: null;\n"
 "text-align: center;")
@@ -100,10 +100,10 @@ class Ui_Form(object):
         self.label_5.setStyleSheet(u"color: rgb(255, 255, 255);")
         self.label_2 = QLabel(Form)
         self.label_2.setObjectName(u"label_2")
-        self.label_2.setGeometry(QRect(190, 530, 51, 51))
+        self.label_2.setGeometry(QRect(180, 530, 51, 51))
         font3 = QFont()
         font3.setFamilies([u"Tahoma"])
-        font3.setPointSize(24)
+        font3.setPointSize(20)
         self.label_2.setFont(font3)
         self.label_2.setStyleSheet(u"color: rgb(218, 255, 222);")
         self.label_4 = QLabel(Form)
@@ -116,7 +116,7 @@ class Ui_Form(object):
         self.label_3.setGeometry(QRect(10, 650, 511, 20))
         font4 = QFont()
         font4.setFamilies([u"Tahoma"])
-        font4.setPointSize(13)
+        font4.setPointSize(11)
         self.label_3.setFont(font4)
         self.label_3.setStyleSheet(u"color: rgb(255, 255, 255);")
         self.label_3.setAlignment(Qt.AlignCenter)
@@ -141,7 +141,7 @@ class Ui_Form(object):
 "hr { height: 1px; border-width: 0; }\n"
 "li.unchecked::marker { content: \"\\2610\"; }\n"
 "li.checked::marker { content: \"\\2612\"; }\n"
-"</style></head><body style=\" font-family:'Tahoma'; font-size:18pt; font-weight:400; font-style:normal;\">\n"
+"</style></head><body style=\" font-family:'Tahoma'; font-size:16pt; font-weight:400; font-style:normal;\">\n"
 "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'.AppleSystemUIFont'; font-size:13pt;\"><br /></p></body></html>", None))
         self.label_5.setText(QCoreApplication.translate("Form", u"\u041f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u043e:", None))
         self.label_2.setText(QCoreApplication.translate("Form", u"0", None))

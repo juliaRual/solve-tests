@@ -1,5 +1,5 @@
 import sys
-from PySide6 import QtCore, QtWidgets
+from PySide6 import QtCore, QtWidgets, QtGui
 from gui import Ui_Form
 from initial import Ui_Form as Ui_Form_init
 from spmi import tests
@@ -7,6 +7,7 @@ import random
 import textwrap
 
 app = QtWidgets.QApplication(sys.argv)
+app.setWindowIcon(QtGui.QIcon('books.ico'))
 Form2 = QtWidgets.QWidget()
 Form = QtWidgets.QWidget()
 ui = Ui_Form()

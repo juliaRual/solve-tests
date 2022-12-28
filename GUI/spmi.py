@@ -2,8 +2,8 @@
 def tests(filename, ):
     database_tmp = []
     database = []
-
-    with open(filename, 'r') as file:
+    print(filename)
+    with open(filename, 'r', encoding="utf-8") as file:
         for row in file:
             line = row.strip() # deleting \n
             database_tmp.append(line) # appending 

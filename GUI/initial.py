@@ -37,7 +37,7 @@ class Ui_Form(object):
         self.label_5.setGeometry(QRect(0, 40, 351, 31))
         font = QFont()
         font.setFamilies([u"Tahoma"])
-        font.setPointSize(20)
+        font.setPointSize(16)
         self.label_5.setFont(font)
         self.label_5.setStyleSheet(u"color: rgb(255, 255, 255);")
         self.label_5.setAlignment(Qt.AlignCenter)
@@ -46,8 +46,8 @@ class Ui_Form(object):
         self.pushButton.setGeometry(QRect(110, 110, 131, 61))
         font1 = QFont()
         font1.setFamilies([u"Tahoma"])
-        font1.setPointSize(16)
-        font1.setBold(True)
+        font1.setPointSize(14)
+        font1.setBold(False)
         self.pushButton.setFont(font1)
         self.pushButton.setStyleSheet(u"color: rgb(255, 250, 252);\n"
 "background-color: rgb(160, 113, 255);\n"

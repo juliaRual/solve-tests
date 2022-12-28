@@ -28,7 +28,7 @@
    <property name="font">
     <font>
      <family>Tahoma</family>
-     <pointsize>16</pointsize>
+     <pointsize>13</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -52,7 +52,7 @@ border-radius: 25;</string>
    <property name="font">
     <font>
      <family>Tahoma</family>
-     <pointsize>16</pointsize>
+     <pointsize>13</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -77,7 +77,7 @@ padding: 0px 15px 0px 15px;</string>
    <property name="font">
     <font>
      <family>Tahoma</family>
-     <pointsize>16</pointsize>
+     <pointsize>13</pointsize>
     </font>
    </property>
    <property name="layoutDirection">
@@ -110,7 +110,7 @@ border-radius: 25;</string>
    <property name="font">
     <font>
      <family>Tahoma</family>
-     <pointsize>16</pointsize>
+     <pointsize>13</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -134,7 +134,7 @@ border-radius: 25;</string>
    <property name="font">
     <font>
      <family>Tahoma</family>
-     <pointsize>18</pointsize>
+     <pointsize>14</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -158,7 +158,7 @@ border-radius: 25;</string>
    <property name="font">
     <font>
      <family>Tahoma</family>
-     <pointsize>20</pointsize>
+     <pointsize>16</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -198,7 +198,7 @@ border-radius: 25;</string>
     <property name="font">
      <font>
       <family>Tahoma</family>
-      <pointsize>18</pointsize>
+      <pointsize>16</pointsize>
      </font>
     </property>
     <property name="styleSheet">
@@ -219,7 +219,7 @@ p, li { white-space: pre-wrap; }
 hr { height: 1px; border-width: 0; }
 li.unchecked::marker { content: &quot;\2610&quot;; }
 li.checked::marker { content: &quot;\2612&quot;; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Tahoma'; font-size:18pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Tahoma'; font-size:16pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'.AppleSystemUIFont'; font-size:13pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="textInteractionFlags">
@@ -239,7 +239,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
    <property name="font">
     <font>
      <family>Tahoma</family>
-     <pointsize>20</pointsize>
+     <pointsize>16</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -252,7 +252,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>190</x>
+     <x>180</x>
      <y>530</y>
      <width>51</width>
      <height>51</height>
@@ -261,7 +261,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
    <property name="font">
     <font>
      <family>Tahoma</family>
-     <pointsize>24</pointsize>
+     <pointsize>20</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -283,7 +283,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
    <property name="font">
     <font>
      <family>Tahoma</family>
-     <pointsize>24</pointsize>
+     <pointsize>20</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -305,7 +305,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
    <property name="font">
     <font>
      <family>Tahoma</family>
-     <pointsize>13</pointsize>
+     <pointsize>11</pointsize>
     </font>
    </property>
    <property name="styleSheet">

@@ -48,7 +48,7 @@ border-radius: 25;</string>
     <property name="font">
      <font>
       <family>Tahoma</family>
-      <pointsize>20</pointsize>
+      <pointsize>16</pointsize>
      </font>
     </property>
     <property name="styleSheet">
@@ -73,8 +73,8 @@ border-radius: 25;</string>
     <property name="font">
      <font>
       <family>Tahoma</family>
-      <pointsize>16</pointsize>
-      <bold>true</bold>
+      <pointsize>14</pointsize>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
