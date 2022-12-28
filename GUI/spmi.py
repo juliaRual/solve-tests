@@ -1,7 +1,3 @@
-import random
-
-
-
 
 def tests(filename, ):
     database_tmp = []
