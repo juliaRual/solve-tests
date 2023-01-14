@@ -17,15 +17,17 @@ ui2.setupUi(Form)
 Form.show()
 
 # app logic
-def get_random_question(db, ):
+def get_random_question(db):
     q = random.choice(db)
     true_answer = None
     true_answer_text = None
+    print(q)
     for elem in range(1, len(q)):
         if q[elem][0] == '@':
             true_answer = elem
-            true_answer_text = q[elem][1:]
-            q[elem] = q[elem][1:]
+            true_answer_text = q[elem]#[1:]
+            q[elem] = q[elem]#[1:]
+    
     return q, true_answer, true_answer_text
 
 q = []
@@ -38,11 +40,13 @@ def change_question(database):
 
     ui.textEdit_question.setText(go_warp(question[0], 500))
     
+    #print(question[1][1:] if (question[1][0] == '@') else question[1])
 
-    ui.pushButton_a1.setText(go_warp(question[1], 40))
-    ui.pushButton_a2.setText(go_warp(question[2], 40))
-    ui.pushButton_a3.setText(go_warp(question[3], 40))
-    ui.pushButton_a4.setText(go_warp(question[4], 40))
+    ui.pushButton_a1.setText(go_warp(question[1][1:] if (question[1][0] == '@') else question[1], 40))
+    ui.pushButton_a2.setText(go_warp(question[2][1:] if (question[2][0] == '@') else question[2], 40))
+    ui.pushButton_a3.setText(go_warp(question[3][1:] if (question[3][0] == '@') else question[3], 40))
+    ui.pushButton_a4.setText(go_warp(question[4][1:] if (question[4][0] == '@') else question[4], 40))
+
 
     q.append([question, true_answer_position, true_answer_text])
     ui.pushButton_5.setText('Пропуск')
@@ -62,6 +66,7 @@ def change_question(database):
 
 def checkanswer(q, click_position):
     ui.pushButton_5.setText('Дальше')
+
     question = q[0]
     true_answer_position = q[1]
     true_answer_text = q[2]
@@ -77,7 +82,8 @@ def checkanswer(q, click_position):
 
         ui.__getattribute__(f'pushButton_a{true_answer_position}').setStyleSheet('color: rgb(255, 255, 255); background-color: rgb(94, 181, 247); border-radius: 25; padding: 0px 15px 0px 15px;')
         ui.__getattribute__(f'pushButton_a{click_position}').setStyleSheet('color: rgb(255, 255, 255); background-color: rgb(37, 71, 97); border-radius: 25; padding: 0px 15px 0px 15px;')
-        
+
+
     ui.label_4.setText(str(int(ui.label_4.text()) + 1))
     ui.pushButton_a1.setDisabled(True)
     ui.pushButton_a2.setDisabled(True)
@@ -91,6 +97,7 @@ def go_run(filepath):
     Form.close()
     ui.setupUi(Form2)
     Form2.show()
+    
     change_question(database)
     ui.pushButton_5.clicked.connect(lambda: change_question(database))
 
