@@ -44,3 +44,22 @@ pip3 install pyside6
 
 ## Примечание
 Это самая первая версия, есть множество ограничений. Например, слишком длинный ответ может не поместиться целиком в поле для ответа. Для Windows будет шалить дизайн.
+
+
+## Подсказка
+
+Чтобы не проставлять знаки собачки вручную, можно к базе в Word применить макрос. Например, макрос который добавляет символ "@" перед каждой строкой, к которой применено выделение цветом
+
+```
+Sub AddAtSymbolToHighlightedLines()
+    Dim oPara As Paragraph
+    ' Проходим по всем параграфам в документе
+    For Each oPara In ActiveDocument.Paragraphs
+        ' Проверяем, выделен ли параграф
+        If oPara.Range.HighlightColorIndex <> wdNoHighlight Then
+            ' Добавляем символ "@" перед текстом параграфа
+            oPara.Range.InsertBefore "@"
+        End If
+    Next oPara
+End Sub
+```
